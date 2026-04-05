@@ -1,0 +1,57 @@
+name: smart_finance_coach
+description: Production-ready Flutter finance application with Clean Architecture, Riverpod, and offline-first support.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Local Storage (Offline-first) - Hive только (Isar удаляем чтобы не было конфликта)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Platform-specific utilities
+  device_info_plus: ^9.1.1
+  
+  # Charts & Analytics
+  fl_chart: ^0.65.2
+  
+  # Utilities
+  intl: ^0.18.1
+  uuid: ^4.2.2
+  equatable: ^2.0.5
+  
+  # UI/UX
+  google_fonts: ^6.1.0
+  shimmer: ^3.0.0
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Code generation
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+  hive_generator: ^2.0.1
+  
+  # Linting
+  flutter_lints: ^3.0.1
+  mockito: ^5.4.4
+  
+  # Testing
+  mocktail: ^1.0.2
+
+flutter:
+  uses-material-design: true
